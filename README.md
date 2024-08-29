@@ -1,6 +1,6 @@
 <div align="center">
 
-[![logo](src/img/logo-b.png)](https://github.com/ipitio/backage)
+[![logo](img/logo-b.png)](https://github.com/ipitio/backage)
 
 # [backage](https://github.com/ipitio/backage)
 
