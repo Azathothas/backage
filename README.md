@@ -4,7 +4,7 @@
 
 # [backage](https://github.com/ipitio/backage)
 
-**It's all part and parcel**
+**Serving 1151 packages as of 2024-09-06**
 
 ---
 
