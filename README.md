@@ -4,11 +4,11 @@
 
 # [backage](https://github.com/ipitio/backage)
 
-**Serving 1250 packages as of 2024-09-12**
+**It's all part and parcel**
 
 ---
 
-[![pages-build-deployment](https://github.com/ipitio/backage/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ipitio/backage/actions/workflows/pages/pages-build-deployment)
+[![pages-build-deployment](https://github.com/ipitio/backage/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ipitio/backage/actions/workflows/pages/pages-build-deployment) [![packages](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fipitio.github.io%2Fbackage%2F.json&query=%24.packages&logo=github&style=plastic&label=packages&labelColor=%23333&color=%2314C035)](https://github.com/ipitio/backage/tree/index) [![date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fipitio.github.io%2Fbackage%2F.json&query=%24.date&logo=github&style=plastic&label=refreshed&labelColor=%23333&color=%2314C035)](https://github.com/ipitio/backage/releases/latest)
 
 </div>
 
