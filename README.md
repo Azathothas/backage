@@ -34,63 +34,11 @@ Use something like [shields.io/json](https://shields.io/badges/dynamic-json-badg
 https://ipitio.github.io/backage/OWNER/REPO/PACKAGE.FORMAT
 ```
 
-Replace `OWNER/REPO/PACKAGE.FORMAT` with their respective values. The format can be either `json` or `xml`. If you're using Shields.io to evaluate expressions, like filters, you'll need the XML endpoint; see [this issue](https://github.com/ipitio/backage/issues/23).
+Replace `OWNER/REPO/PACKAGE.FORMAT` with their respective values. The format can be either `json` or `xml`. If you're using Shields to evaluate expressions, like filters, you'll need the XML endpoint -- see [this issue](https://github.com/ipitio/backage/issues/23).
 
-## Path
+### Properties
 
-<details>
-
-<summary>JSON</summary>
-
-You can query a package for its properties, like size or version:
-
-```jboss-cli
-$.PROPERTY
-```
-
-```jboss-cli
-$.size
-```
-
-Versions may be filtered in and tags out:
-
-```jboss-cli
-$.version[FILTER].PROPERTY
-```
-
-```jboss-cli
-$.version[?(@.latest)].tags[?(@!="latest")]
-```
-
-</details>
-
-<details>
-
-<summary>XML</summary>
-
-You can query a package for its properties, like size or version:
-
-```prolog
-/bkg/PROPERTY
-```
-
-```prolog
-/bkg/size
-```
-
-Versions can be filtered in and tags out:
-
-```prolog
-/bkg/version[FILTER]/PROPERTY
-```
-
-```prolog
-/bkg/version[./latest[.="true"]]/tags[.!="latest"]
-```
-
-</details>
-
-## Properties
+You'll find these properties for the package and its versions:
 
 <details>
 
@@ -145,5 +93,61 @@ Versions can be filtered in and tags out:
 | `raw_downloads_week`  |    number    | Count of downloads in the last week            |
 |  `raw_downloads_day`  |    number    | Count of downloads in the last day             |
 |        `tags`         | string array | The tags of the version                        |
+
+</details>
+
+### Paths
+
+They can be queried with the following paths:
+
+<details>
+
+<summary>JSON</summary>
+
+You can query a package for its properties, like size or version:
+
+```jboss-cli
+$.PROPERTY
+```
+
+```jboss-cli
+$.size
+```
+
+Versions may be filtered in and tags out:
+
+```jboss-cli
+$.version[FILTER].PROPERTY
+```
+
+```jboss-cli
+$.version[?(@.latest)].tags[?(@!="latest")]
+```
+
+</details>
+
+<details>
+
+<summary>XML</summary>
+
+You can query a package for its properties, like size or version:
+
+```prolog
+/bkg/PROPERTY
+```
+
+```prolog
+/bkg/size
+```
+
+Versions can be filtered in and tags out:
+
+```prolog
+/bkg/version[FILTER]/PROPERTY
+```
+
+```prolog
+/bkg/version[./latest[.="true"]]/tags[.!="latest"]
+```
 
 </details>
